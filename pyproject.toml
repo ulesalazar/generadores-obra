@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "generadores-obra"
+version = "0.1.0"
+description = "Números generadores y estimaciones de obra en México: carátula, acumulados, anticipo, IVA y retenciones en Excel con fórmulas"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Consultoría de Costos · presupuestoai.com" }]
+keywords = ["números generadores", "estimaciones", "obra pública", "construcción", "México", "RLOPSRM"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Natural Language :: Spanish",
+  "Intended Audience :: Other Audience",
+  "Topic :: Office/Business :: Financial",
+]
+dependencies = ["openpyxl>=3.1", "PyYAML>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.urls]
+Homepage = "https://presupuestoai.com"
+Repository = "https://github.com/ulesalazar/generadores-obra"
+
+[project.scripts]
+generadores-obra = "generadores_obra.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+testpaths = ["tests", "src/generadores_obra"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

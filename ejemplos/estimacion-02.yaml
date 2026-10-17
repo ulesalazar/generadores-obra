@@ -1,0 +1,50 @@
+# Estimación de ejemplo para generadores-obra.
+# Datos ILUSTRATIVOS: obra, contrato, cantidades y precios son inventados.
+
+obra: Construcción de aulas en escuela primaria, Querétaro, Qro.
+contrato: EJEMPLO-OP-2026-014
+contratista: Constructora de Ejemplo, S.A. de C.V.
+dependencia: Dependencia contratante de ejemplo
+estimacion: 2
+periodo: {del: 2026-09-01, al: 2026-09-30}
+
+iva: 0.16
+anticipo: 0.30                 # se amortiza en la misma proporción en cada estimación
+retenciones:
+  inspeccion_vigilancia: 0.005 # 5 al millar
+
+firmas:
+  Superintendente de construcción: Nombre del superintendente
+  Residente de obra: Nombre del residente
+  Supervisión externa: Nombre del supervisor
+
+catalogo:
+  - {partida: Cimentación, clave: CIM-010, descripcion: "Firme de concreto f'c=200 kg/cm2 de 10 cm, acabado común", unidad: m2, cantidad: 180, pu: 468.28}
+  - {partida: Cimentación, clave: CIM-030, descripcion: "Concreto f'c=250 kg/cm2 en zapatas aisladas", unidad: m3, cantidad: 24, pu: 3520.00}
+  - {partida: Albañilería, clave: ALB-020, descripcion: Muro de block de concreto 15x20x40 cm con mortero 1:4, unidad: m2, cantidad: 420, pu: 604.21}
+  - {partida: Acabados, clave: ACA-030, descripcion: Aplanado fino en muros con mortero 1:4 de 2 cm, unidad: m2, cantidad: 840, pu: 302.51}
+  - {partida: Instalaciones, clave: INE-002, descripcion: Salida de contacto monofásico doble polarizado, unidad: sal, cantidad: 36, pu: 1180.00}
+
+# Cantidades acumuladas en estimaciones anteriores.
+anteriores:
+  CIM-010: 95.00
+  CIM-030: 24.00
+  ALB-020: 160.00
+
+generadores:
+  - clave: CIM-010
+    renglones:
+      - {nivel: PB, eje: "A-B", tramo: "1-3", largo: 9.00, ancho: 7.20, croquis: G-01, nota: Aula 2}
+      - {nivel: PB, eje: "B-C", tramo: "1-2", largo: 3.20, ancho: 1.50, croquis: G-01, nota: Pórtico de acceso}
+  - clave: ALB-020
+    renglones:
+      - {nivel: PB, eje: "A", tramo: "1-3", largo: 9.00, alto: 2.80, croquis: G-02}
+      - {nivel: PB, eje: "C", tramo: "1-3", largo: 9.00, alto: 2.80, croquis: G-02}
+      - {nivel: PB, eje: "1", tramo: "A-C", largo: 7.20, alto: 2.80, croquis: G-02}
+      - {nivel: PB, eje: "3", tramo: "A-C", largo: 7.20, alto: 2.80, croquis: G-02}
+      - {nivel: PB, eje: "1", tramo: "A-B", cant: -1, largo: 1.00, alto: 2.10, croquis: G-02, nota: "Vano de puerta P-1"}
+      - {nivel: PB, eje: "A", tramo: "1-3", cant: -3, largo: 1.80, alto: 1.20, croquis: G-02, nota: "Vanos de ventana V-1"}
+
+# Renglones capturados en hoja de cálculo (columnas: clave, nivel, eje, tramo, cant, largo, ancho, alto, croquis, nota)
+generadores_csv:
+  - estimacion-02-aplanados.csv

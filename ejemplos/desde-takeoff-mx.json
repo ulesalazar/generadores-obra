@@ -1,0 +1,333 @@
+{
+ "schema": "takeoff-mx.generadores.v1",
+ "conceptos": [
+  {
+   "clave": "ACA-001",
+   "descripcion": "Piso de loseta cerámica asentada con adhesivo cementoso, junteado con boquilla sin arena, incluye: materiales, mano de obra, equipo y herramienta.",
+   "unidad": "M2",
+   "especialidad": "ACA",
+   "partida": "ACA.01",
+   "partida_nombre": "Pisos",
+   "medicion": "area",
+   "criterio": "Cant = veces (negativa en deducciones), Dim1 = área medida (m²)",
+   "condicion": "P-2",
+   "condicion_id": "cnd-031529b4-4d1a-4a70-9278-5c4247cb1585",
+   "inferido": false,
+   "renglones": [
+    {
+     "no": 1,
+     "descripcion": "Área — BAÑO 102 [propuesta de agente sin revisar]",
+     "referencia": "Lámina A-01 (plano-muestra-mx.pdf)",
+     "hoja": "plano-muestra-mx.pdf",
+     "id_medicion": "shp-1caa2887-a699-45b2-9483-32961e2359ad",
+     "origen": "Agente IA",
+     "revisado": false,
+     "metodo": "Trazo manual",
+     "cant": 1,
+     "dim1": 11.64,
+     "dim2": 1,
+     "dim3": 1,
+     "parcial": 11.64
+    },
+    {
+     "no": 2,
+     "descripcion": "Área — COCINA 103 [propuesta de agente sin revisar]",
+     "referencia": "Lámina A-01 (plano-muestra-mx.pdf)",
+     "hoja": "plano-muestra-mx.pdf",
+     "id_medicion": "shp-fa7d36d1-11f4-40e6-8d2e-9e90942d60f8",
+     "origen": "Agente IA",
+     "revisado": false,
+     "metodo": "Trazo manual",
+     "cant": 1,
+     "dim1": 11.174,
+     "dim2": 1,
+     "dim3": 1,
+     "parcial": 11.174
+    }
+   ],
+   "subtotal": 22.814,
+   "desperdicio_pct": 5,
+   "total": 23.95,
+   "advertencias": [
+    "2 de 2 mediciones son propuestas de agente sin revisión humana."
+   ]
+  },
+  {
+   "clave": "ACA-002",
+   "descripcion": "Piso de porcelanato rectificado de 60x60 cm asentado con adhesivo para porcelanato, junta de 2 mm con boquilla, incluye: materiales, mano de obra, equipo y herramienta.",
+   "unidad": "M2",
+   "especialidad": "ACA",
+   "partida": "ACA.01",
+   "partida_nombre": "Pisos",
+   "medicion": "area",
+   "criterio": "Cant = veces (negativa en deducciones), Dim1 = área medida (m²)",
+   "condicion": "P-1",
+   "condicion_id": "cnd-39aa58db-d0ce-4970-a17e-b1e030c67fac",
+   "inferido": false,
+   "renglones": [
+    {
+     "no": 1,
+     "descripcion": "Área — LOCAL 101 [propuesta de agente sin revisar]",
+     "referencia": "Lámina A-01 (plano-muestra-mx.pdf)",
+     "hoja": "plano-muestra-mx.pdf",
+     "id_medicion": "shp-523b744c-f76b-4f6c-bb07-bce0af018275",
+     "origen": "Agente IA",
+     "revisado": false,
+     "metodo": "Trazo manual",
+     "cant": 1,
+     "dim1": 36,
+     "dim2": 1,
+     "dim3": 1,
+     "parcial": 36
+    }
+   ],
+   "subtotal": 36,
+   "desperdicio_pct": 7,
+   "total": 38.52,
+   "advertencias": [
+    "1 de 1 mediciones son propuestas de agente sin revisión humana."
+   ]
+  },
+  {
+   "clave": "ACA-010",
+   "descripcion": "Zoclo de loseta o porcelanato de 10 cm de altura asentado con adhesivo y junteado, incluye: materiales, mano de obra, equipo y herramienta.",
+   "unidad": "ML",
+   "especialidad": "ACA",
+   "partida": "ACA.02",
+   "partida_nombre": "Zoclos y remates",
+   "medicion": "longitud",
+   "criterio": "Cant = veces, Dim1 = longitud (m)",
+   "condicion": "Z-1",
+   "condicion_id": "cnd-af09e67b-a9df-405c-ba6e-f94b1828b18c",
+   "inferido": false,
+   "renglones": [
+    {
+     "no": 1,
+     "descripcion": "Recorrido — LOCAL 101 [propuesta de agente sin revisar]",
+     "referencia": "Lámina A-01 (plano-muestra-mx.pdf)",
+     "hoja": "plano-muestra-mx.pdf",
+     "id_medicion": "shp-94dc4622-7ebb-4533-a85f-f7d8a85e9e9e",
+     "origen": "Agente IA",
+     "revisado": false,
+     "metodo": "Trazo manual",
+     "cant": 1,
+     "dim1": 24,
+     "dim2": 1,
+     "dim3": 1,
+     "parcial": 24
+    }
+   ],
+   "subtotal": 24,
+   "desperdicio_pct": 0,
+   "total": 24,
+   "advertencias": [
+    "1 de 1 mediciones son propuestas de agente sin revisión humana."
+   ]
+  },
+  {
+   "clave": "ACA-020",
+   "descripcion": "Pintura vinílica en muros a dos manos, incluye sellador, resanes y lijado; materiales, mano de obra, equipo y herramienta.",
+   "unidad": "M2",
+   "especialidad": "ACA",
+   "partida": "ACA.03",
+   "partida_nombre": "Acabados en muros",
+   "medicion": "muro",
+   "criterio": "Cant = veces (negativa en vanos), Dim1 = longitud en planta o ancho del vano (m), Dim2 = altura (m)",
+   "condicion": "M-1",
+   "condicion_id": "cnd-90cf2de3-79a1-4222-9222-93d8af3455ed",
+   "inferido": false,
+   "renglones": [
+    {
+     "no": 1,
+     "descripcion": "Muro — LOCAL 101 [propuesta de agente sin revisar]",
+     "referencia": "Lámina A-01 (plano-muestra-mx.pdf)",
+     "hoja": "plano-muestra-mx.pdf",
+     "id_medicion": "shp-d9ef1218-967b-4a3e-b328-65c23ee4bce5",
+     "origen": "Agente IA",
+     "revisado": false,
+     "metodo": "Trazo manual",
+     "cant": 1,
+     "dim1": 24,
+     "dim2": 2.7,
+     "dim3": 1,
+     "parcial": 64.80000000000001
+    },
+    {
+     "no": 2,
+     "descripcion": "Deducción de vano — P-1 0.90x2.10 [propuesta de agente sin revisar]",
+     "referencia": "Lámina A-01 (plano-muestra-mx.pdf)",
+     "hoja": "plano-muestra-mx.pdf",
+     "id_medicion": "shp-47753e46-c83e-4c3d-8867-034ee376a13c",
+     "origen": "Agente IA",
+     "revisado": false,
+     "metodo": "Trazo manual",
+     "cant": -1,
+     "dim1": 0.9,
+     "dim2": 2.1,
+     "dim3": 1,
+     "parcial": -1.8900000000000001
+    }
+   ],
+   "subtotal": 62.91,
+   "desperdicio_pct": 0,
+   "total": 62.91,
+   "advertencias": [
+    "2 de 2 mediciones son propuestas de agente sin revisión humana."
+   ]
+  },
+  {
+   "clave": "EST-011",
+   "descripcion": "Concreto premezclado f'c=250 kg/cm² en losa maciza, incluye bombeo, vibrado y curado; materiales, mano de obra, equipo y herramienta.",
+   "unidad": "M3",
+   "especialidad": "EST",
+   "partida": "EST.02",
+   "partida_nombre": "Estructura de concreto",
+   "medicion": "area",
+   "criterio": "Cant = veces (negativa en deducciones), Dim1 = área medida (m²), Dim2 = Espesor de losa (m)",
+   "condicion": "LOSA",
+   "condicion_id": "cnd-b5495b67-e99d-4ada-b31a-fd9aa6fe4b97",
+   "inferido": false,
+   "renglones": [
+    {
+     "no": 1,
+     "descripcion": "Área — AZOTEA, EJES A-B / 1-2 [propuesta de agente sin revisar]",
+     "referencia": "Lámina A-01 (plano-muestra-mx.pdf)",
+     "hoja": "plano-muestra-mx.pdf",
+     "id_medicion": "shp-21d62aca-3dab-4f41-9abc-6af1447f0567",
+     "origen": "Agente IA",
+     "revisado": false,
+     "metodo": "Trazo manual",
+     "cant": 1,
+     "dim1": 64.89,
+     "dim2": 0.1,
+     "dim3": 1,
+     "parcial": 6.489000000000001
+    }
+   ],
+   "subtotal": 6.489,
+   "desperdicio_pct": 0,
+   "total": 6.49,
+   "advertencias": [
+    "1 de 1 mediciones son propuestas de agente sin revisión humana."
+   ]
+  },
+  {
+   "clave": "INE-002",
+   "descripcion": "Salida de contacto monofásico doble polarizado con tubería, cable, caja y placa, incluye: materiales, mano de obra, equipo y herramienta.",
+   "unidad": "SAL",
+   "especialidad": "INE",
+   "partida": "INE.01",
+   "partida_nombre": "Salidas eléctricas",
+   "medicion": "conteo",
+   "criterio": "Cant = piezas contadas",
+   "condicion": "C-1",
+   "condicion_id": "cnd-67711003-515d-43af-9b5c-3ee3a5a25d07",
+   "inferido": false,
+   "renglones": [
+    {
+     "no": 1,
+     "descripcion": "Conteo — LOCAL 101 [propuesta de agente sin revisar]",
+     "referencia": "Lámina A-01 (plano-muestra-mx.pdf)",
+     "hoja": "plano-muestra-mx.pdf",
+     "id_medicion": "shp-5e1d7360-a6a2-4fbf-8fd0-bdce720f247d",
+     "origen": "Agente IA",
+     "revisado": false,
+     "metodo": "Trazo manual",
+     "cant": 1,
+     "dim1": 1,
+     "dim2": 1,
+     "dim3": 1,
+     "parcial": 1
+    },
+    {
+     "no": 2,
+     "descripcion": "Conteo — LOCAL 101 [propuesta de agente sin revisar]",
+     "referencia": "Lámina A-01 (plano-muestra-mx.pdf)",
+     "hoja": "plano-muestra-mx.pdf",
+     "id_medicion": "shp-b72c7e3e-08e9-4869-bb8a-58a956425584",
+     "origen": "Agente IA",
+     "revisado": false,
+     "metodo": "Trazo manual",
+     "cant": 1,
+     "dim1": 1,
+     "dim2": 1,
+     "dim3": 1,
+     "parcial": 1
+    },
+    {
+     "no": 3,
+     "descripcion": "Conteo — LOCAL 101 [propuesta de agente sin revisar]",
+     "referencia": "Lámina A-01 (plano-muestra-mx.pdf)",
+     "hoja": "plano-muestra-mx.pdf",
+     "id_medicion": "shp-9b2da492-c1cd-42c3-bbed-6377af29ae32",
+     "origen": "Agente IA",
+     "revisado": false,
+     "metodo": "Trazo manual",
+     "cant": 1,
+     "dim1": 1,
+     "dim2": 1,
+     "dim3": 1,
+     "parcial": 1
+    },
+    {
+     "no": 4,
+     "descripcion": "Conteo — LOCAL 101 [propuesta de agente sin revisar]",
+     "referencia": "Lámina A-01 (plano-muestra-mx.pdf)",
+     "hoja": "plano-muestra-mx.pdf",
+     "id_medicion": "shp-e9ab04af-9824-4a21-a1d9-343806b7b972",
+     "origen": "Agente IA",
+     "revisado": false,
+     "metodo": "Trazo manual",
+     "cant": 1,
+     "dim1": 1,
+     "dim2": 1,
+     "dim3": 1,
+     "parcial": 1
+    }
+   ],
+   "subtotal": 4,
+   "desperdicio_pct": 0,
+   "total": 4,
+   "advertencias": [
+    "4 de 4 mediciones son propuestas de agente sin revisión humana."
+   ]
+  }
+ ],
+ "partidas": [
+  {
+   "wbs": "ACA.01",
+   "nombre": "Pisos",
+   "especialidad": "ACA"
+  },
+  {
+   "wbs": "ACA.02",
+   "nombre": "Zoclos y remates",
+   "especialidad": "ACA"
+  },
+  {
+   "wbs": "ACA.03",
+   "nombre": "Acabados en muros",
+   "especialidad": "ACA"
+  },
+  {
+   "wbs": "EST.02",
+   "nombre": "Estructura de concreto",
+   "especialidad": "EST"
+  },
+  {
+   "wbs": "INE.01",
+   "nombre": "Salidas eléctricas",
+   "especialidad": "INE"
+  }
+ ],
+ "resumen": {
+  "conceptos": 6,
+  "renglones": 11,
+  "mediciones_agente": 11,
+  "mediciones_agente_sin_revisar": 11,
+  "conceptos_inferidos": 0
+ },
+ "advertencias": [],
+ "proyecto": "Plano de muestra Takeoff MX",
+ "fecha": "2026-10-14"
+}
