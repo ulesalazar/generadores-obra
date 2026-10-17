@@ -13,13 +13,14 @@ anticipo, IVA, retenciones y líquido a pagar.
 $ generadores-obra revisar ejemplos/estimacion-02.yaml
 Clave        Unidad   Contratado    Anterior        Esta   Acumulado   Avance
 CIM-010          m2      180.000      95.000      69.600     164.600    91.4%
-ALB-020          m2      420.000     160.000      82.140     242.140    57.7%
+CIM-030          m3       24.000      24.000       0.000      24.000   100.0%
 ...
-Importe de la estimación         115,185.27
-Amortización del anticipo        -34,555.58
-IVA                               12,900.75
-Retención inspeccion vigilancia     -575.93
-Líquido a pagar                   92,954.52
+
+Importe de la estimación               113,862.79
+Amortización del anticipo              -34,158.84
+IVA                                     12,752.63
+Retención inspección vigilancia           -569.31
+Líquido a pagar                         91,887.27
 ```
 
 ## Para qué sirve
@@ -62,7 +63,7 @@ estimacion: 2
 periodo: {del: 2026-09-01, al: 2026-09-30}
 iva: 0.16
 anticipo: 0.30
-retenciones: {inspeccion_vigilancia: 0.005}
+retenciones: {inspección_vigilancia: 0.005}
 firmas:
   Superintendente de construcción: Nombre
   Residente de obra: Nombre

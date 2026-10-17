@@ -106,7 +106,7 @@ def test_ejemplo_yaml_con_csv():
     assert est.generadores["ACA-030"].subtotal == pytest.approx(77.76)
     assert est.generadores["INE-002"].subtotal == 8
     assert est.advertencias() == []
-    assert est.caratula().liquido == pytest.approx(92_954.52, abs=0.01)
+    assert est.caratula().liquido == pytest.approx(91_887.27, abs=0.01)
 
 
 def test_importa_takeoff_mx_con_cantidades_netas():

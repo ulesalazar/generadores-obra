@@ -25,13 +25,16 @@ def _cmd_revisar(args: argparse.Namespace) -> int:
         )
     car = est.caratula()
     print()
-    print(f"Importe de la estimación   {car.importe:>16,.2f}")
-    print(f"Amortización del anticipo  {-car.amortizacion_anticipo + 0.0:>16,.2f}")
-    print(f"IVA                        {car.iva:>16,.2f}")
-    for nombre, valor in car.retenciones.items():
-        etiqueta = f"Retención {nombre.replace('_', ' ')}"
-        print(f"{etiqueta:<27}{-valor + 0.0:>16,.2f}")
-    print(f"Líquido a pagar            {car.liquido:>16,.2f}")
+    renglones = [
+        ("Importe de la estimación", car.importe),
+        ("Amortización del anticipo", -car.amortizacion_anticipo + 0.0),
+        ("IVA", car.iva),
+        *((f"Retención {n.replace('_', ' ')}", -v + 0.0) for n, v in car.retenciones.items()),
+        ("Líquido a pagar", car.liquido),
+    ]
+    ancho = max(len(t) for t, _ in renglones) + 2
+    for texto, valor in renglones:
+        print(f"{texto:<{ancho}}{valor:>16,.2f}")
     avisos = est.advertencias()
     if avisos:
         print(f"\n{len(avisos)} advertencia(s):", file=sys.stderr)

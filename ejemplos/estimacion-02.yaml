@@ -11,7 +11,7 @@ periodo: {del: 2026-09-01, al: 2026-09-30}
 iva: 0.16
 anticipo: 0.30                 # se amortiza en la misma proporción en cada estimación
 retenciones:
-  inspeccion_vigilancia: 0.005 # 5 al millar
+  inspección_vigilancia: 0.005 # 5 al millar
 
 firmas:
   Superintendente de construcción: Nombre del superintendente
@@ -19,10 +19,10 @@ firmas:
   Supervisión externa: Nombre del supervisor
 
 catalogo:
-  - {partida: Cimentación, clave: CIM-010, descripcion: "Firme de concreto f'c=200 kg/cm2 de 10 cm, acabado común", unidad: m2, cantidad: 180, pu: 468.28}
+  - {partida: Cimentación, clave: CIM-010, descripcion: "Firme de concreto f'c=200 kg/cm2 de 10 cm, acabado común", unidad: m2, cantidad: 180, pu: 463.85}
   - {partida: Cimentación, clave: CIM-030, descripcion: "Concreto f'c=250 kg/cm2 en zapatas aisladas", unidad: m3, cantidad: 24, pu: 3520.00}
-  - {partida: Albañilería, clave: ALB-020, descripcion: Muro de block de concreto 15x20x40 cm con mortero 1:4, unidad: m2, cantidad: 420, pu: 604.21}
-  - {partida: Acabados, clave: ACA-030, descripcion: Aplanado fino en muros con mortero 1:4 de 2 cm, unidad: m2, cantidad: 840, pu: 302.51}
+  - {partida: Albañilería, clave: ALB-020, descripcion: Muro de block de concreto 15x20x40 cm con mortero 1:4, unidad: m2, cantidad: 420, pu: 597.07}
+  - {partida: Acabados, clave: ACA-030, descripcion: Aplanado fino en muros con mortero 1:4 de 2 cm, unidad: m2, cantidad: 840, pu: 297.01}
   - {partida: Instalaciones, clave: INE-002, descripcion: Salida de contacto monofásico doble polarizado, unidad: sal, cantidad: 36, pu: 1180.00}
 
 # Cantidades acumuladas en estimaciones anteriores.
